@@ -66,6 +66,36 @@ h1 {
     line-height: 80px;
 }
 
+h2 {
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h3 {
+    font-size: 48px;
+    line-height: 58px;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -716,5 +746,97 @@ ul.bestfit-icons li:first-child {
     .common-btn {
         padding: 15px 30px;
         font-size: 17px;
+    }
+}
+
+
+/* footer css start */
+.footer {
+    margin-top: 0;
+    background-color: #008099;
+    padding: 75px 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    right: -385px;
+    background-color: #64beb2;
+    width: 47%;
+    height: 100%;
+    top: 0;
+    transform: skew(-9deg);
+    -webkit-transform: skew(-9deg);
+    -ms-transform: skew(-9deg);
+}
+
+.newsletter-form__field-wrapper .field {
+    flex-direction: column;
+}
+.newsletter-form__field-wrapper .field .form-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-top: 20px;
+}
+.newsletter-form__field-wrapper .field .form-btn .newsletter-form__button.common-btn {
+    position: relative !important;
+    width: 100%;
+    height: 100%;
+    max-width: 185px;
+}
+.newsletter-form__field-wrapper .field::after {
+    content: none;
+}
+.footer .footer__blocks-wrapper .footer-block {
+    width: fit-content;
+}
+/* footer css end */
+
+.header .contact-info {
+    display: none;
+}
+
+@media (min-width:990px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .header__search {
+        display: none;
+    }
+    .header .header__icons  .header__search {
+        display: flex;
+    }
+    .header .contact-info {
+        order: 1;
+        width: 33.33%;
+    }
+    .header .header__heading {
+        order: 2;
+        width: 33.33%;
+    }
+    .header .header__icons {
+        order: 3;
+        width: 33.33%;
+        justify-content: flex-end;
+    }
+    .header .header__inline-menu {
+        order: 4;
+    }
+    .header .contact-info {
+        display: block;
+    }
+    .header .contact-info a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
     }
 }

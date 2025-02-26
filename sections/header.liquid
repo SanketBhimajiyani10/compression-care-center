@@ -129,6 +129,13 @@
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
+    {% if section.settings.logo_position == 'top-center' %}
+      <div class="contact-info">
+        <a href="tel:{{ section.settings.contact_number }}">
+          <img src="//compressioncarecenter.com/cdn/shop/files/Phone.png?v=1614336451"> {{ section.settings.contact_number }}
+        </a>
+      </div>
+    {% endif %}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -444,6 +451,11 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
+    {
+      "type": "text",
+      "id": "contact_number",
+      "label": "Contact Number"
+    },
     {
       "type": "select",
       "id": "logo_position",

@@ -38,6 +38,7 @@
     "header": {
       "type": "header",
       "settings": {
+        "contact_number": "980-320-8260",
         "logo_position": "top-center",
         "menu": "new-main-menu",
         "menu_type_desktop": "mega",
