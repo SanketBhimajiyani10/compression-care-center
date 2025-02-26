@@ -60,6 +60,11 @@
               assign footer_grid_class = 'grid--3-col-tablet'
             endif
           -%}
+          <div class="footer-upper">
+            <div class="footer-logo">
+              <img src="{{ section.settings.footer_logo |  image_url: width:379  }}" width="379" height="113" alt="{{ section.settings.footer_logo.alt }}" />
+            </div>
+          </div>
           <div
             class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
@@ -76,7 +81,7 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h6 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h6>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -167,9 +172,6 @@
         >
           {%- if section.settings.newsletter_enable -%}
             <div class="footer-block__newsletter">
-              {%- if section.settings.newsletter_heading != blank -%}
-                <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
-              {%- endif -%}
               {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
@@ -197,17 +199,23 @@
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
                     </label>
-                    <button
-                      type="submit"
-                      class="newsletter-form__button field__button"
-                      name="commit"
-                      id="Subscribe"
-                      aria-label="{{ 'newsletter.button_label' | t }}"
-                    >
-                      <span class="svg-wrapper">
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      </span>
-                    </button>
+                    <div class="form-btn">
+                      <button
+                        type="submit"
+                        class="newsletter-form__button field__button common-btn"
+                        name="commit"
+                        id="Subscribe"
+                        placeholder="Email address"
+                        aria-label="{{ 'newsletter.button_label' | t }}"
+                      >
+                        <span class="svg-wrapper">
+                            Subscribe
+                        </span>
+                        </button>
+                        {%- if section.settings.newsletter_heading != blank -%}
+                          <p class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</p>
+                        {%- endif -%}
+                        </div>
                   </div>
                   {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="ContactFooter-error">
@@ -434,6 +442,11 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_logo",
+      "label": "Footer Logo"
     },
     {
       "type": "header",

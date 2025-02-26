@@ -13,19 +13,48 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_jjTq8H": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer Service",
+            "menu": "footer"
+          }
+        },
+        "link_list_3k8ew3": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Guide to a Perfect Fit",
+            "menu": "fitting-assistance"
+          }
+        },
+        "text_NEeer4": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact Us",
+            "subtext": "<p>1595 E. Garrison Blvd., Suite C Gastonia, NC 28054</p><p><strong>ORDER BY PHONE </strong></p><p><strong>TOLL-FREE  855-857-2200</strong></p><p>Monday - Friday - 9:00am to 5:00pm  (EST)</p><p>FAX 980-320-8298</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_jjTq8H",
+        "link_list_3k8ew3",
+        "text_NEeer4"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
+        "footer_logo": "shopify://shop_images/footer-logo.png",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
+        "newsletter_heading": "Sign up to receive the latest news, ongoing promotions, and product releases",
+        "enable_follow_on_shop": false,
         "show_social": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": true,
         "payment_enable": true,
-        "show_policy": true,
+        "show_policy": false,
         "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 76,
+        "padding_bottom": 0
       }
     }
   },
