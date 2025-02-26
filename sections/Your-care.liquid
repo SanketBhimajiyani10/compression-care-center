@@ -1,0 +1,83 @@
+<div class="your-care-sec" style="background-image:url('{{ section.settings.bg_image | img_url:'master' }}');">
+  <div class="container-fluid">
+    <div class="care-wrapper">
+      <div class="text-care text-center">
+        {% if section.settings.heading != blank %}
+          <h2>
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+        {% if section.settings.subheading != blank %}
+          <h3>
+            {{ section.settings.subheading }}
+          </h3>
+        {% endif %}
+      </div> 
+      <div class="your-care text-center">
+        {% if section.settings.images != blank %}
+          <div class="care-image desktop-img">
+            <img src="{{ section.settings.images | img_url:'master' }}">
+          </div>
+        {% endif %}
+        {% if section.settings.buttontext != blank %}
+          <a class="common-btn" href="{{ section.settings.buttonlink }}">
+            {{ section.settings.buttontext }}
+          </a>
+        {% endif %}
+        {% if section.settings.mobileimages != blank %}
+          <div class="care-image mobile-img">
+            <img src="{{ section.settings.mobileimages | img_url:'master' }}">
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Your Care",
+    "settings": [
+		{
+			"id":"bg_image",
+			"type":"image_picker",
+			"label":"Add Image For Background"
+		},
+		{
+			"id":"heading",
+			"type":"text",
+			"label":"Heading"
+		},
+		{
+			"id":"subheading",
+			"type":"text",
+			"label":"Sub-Heading"
+		},
+		{
+			"id":"images",
+			"type":"image_picker",
+			"label":"Add Image For Desktop"
+		},
+		{
+			"id":"mobileimages",
+			"type":"image_picker",
+			"label":"Add Image For Mobile"
+		},
+		{
+			"id":"buttontext",
+			"type":"text",
+			"label":"Button Label"
+		},
+		{
+			"id":"buttonlink",
+			"type":"url",
+			"label":"Button URL"
+		}
+    ],
+    "presets": [
+        {
+          "name": "Your Care"
+        }
+    ]
+  }
+{% endschema %}

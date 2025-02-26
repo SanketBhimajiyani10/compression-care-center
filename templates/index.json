@@ -1,0 +1,207 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_banner_brJYG9": {
+      "type": "hero-banner",
+      "settings": {
+        "heading": "First time wearing compression  socks?",
+        "subheading": "Let us help you find and choose your perfect fit.",
+        "buttontext": "Find Your Perfect Fit",
+        "buttonlink": "https://compressioncarecenter.com/collections/all/",
+        "images": "shopify://shop_images/collage.png"
+      }
+    },
+    "best_fit_CktgLR": {
+      "type": "best-fit",
+      "settings": {
+        "prod-icon1": "shopify://shop_images/icons1.png",
+        "prod-text1": "BEST PRICE GUARANTEE",
+        "prod-icon2": "shopify://shop_images/icons2.png",
+        "prod-text2": "FREE SHIPPING ALL ONLINE ORDERS",
+        "prod-icon3": "shopify://shop_images/icons3.png",
+        "prod-text3": "90 DAY RETURN POLICY"
+      }
+    },
+    "your_care_F7Bqhd": {
+      "type": "Your-care",
+      "settings": {
+        "bg_image": "shopify://shop_images/care-bg.jpg",
+        "heading": "YOUR CARE CENTER",
+        "subheading": "NEW TO COMPRESSION? CALL 980-320-8260 WE CAN HELP",
+        "images": "shopify://shop_images/care-img.png",
+        "buttontext": "SHOP NOW",
+        "buttonlink": "shopify://collections/all"
+      }
+    },
+    "logo_list_kKWrfE": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_H7RBQR": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/b-logo1.png",
+            "link": "/collections/jobst"
+          }
+        },
+        "logo_AtUtNK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/b-logo2.png",
+            "link": "/collections/mediven"
+          }
+        },
+        "logo_WQnBrQ": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/b-logo3.png",
+            "link": "/collections/juzo"
+          }
+        },
+        "logo_Tm8Vtn": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/b-logo4.png",
+            "link": "/collections/sigvaris"
+          }
+        },
+        "logo_YgKcGU": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/b-logo5.png",
+            "link": "/collections/therafirm"
+          }
+        }
+      },
+      "block_order": [
+        "logo_H7RBQR",
+        "logo_AtUtNK",
+        "logo_WQnBrQ",
+        "logo_Tm8Vtn",
+        "logo_YgKcGU"
+      ],
+      "settings": {
+        "title": "FEATURED BRANDS"
+      }
+    },
+    "highlights_banners_WXg7z6": {
+      "type": "Highlights-banners",
+      "blocks": {
+        "highlight_Htggfp": {
+          "type": "highlight",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Truck.png",
+            "title": "FREE SHIPPING",
+            "text": "<p>Anywhere in the USA.</p>",
+            "link": "shopify://pages/shipping-policy"
+          }
+        },
+        "highlight_4dA3de": {
+          "type": "highlight",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Measure-Tape.png",
+            "title": "FIND THE BEST FIT",
+            "text": "<p>We will show you how to measure.</p>",
+            "link": "shopify://pages/how-to-measure"
+          }
+        },
+        "highlight_pVBAxc": {
+          "type": "highlight",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Socks.png",
+            "title": "COMPRESSION LEVEL GUIDE",
+            "text": "<p>We will guide you to the proper compression level (mmHg).</p>",
+            "link": "shopify://pages/compression-level-guide"
+          }
+        },
+        "highlight_fnQiLW": {
+          "type": "highlight",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Insurance.png",
+            "title": "WE ACCEPT INSURANCE",
+            "text": "<p>BCBS of NC, BCBS of SC, UnitedHealthcare, UMR &Cigna.</p>",
+            "link": "shopify://pages/got-insurance"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_Htggfp",
+        "highlight_4dA3de",
+        "highlight_pVBAxc",
+        "highlight_fnQiLW"
+      ],
+      "settings": {
+        "show_highlights_banner": true,
+        "color": "#4d4d4d",
+        "icon_color": "#4d4d4d",
+        "background_color": "#f8f8f8"
+      }
+    },
+    "collection_list_8RBnJr": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_wqhd8N": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maternity-stockings"
+          }
+        },
+        "featured_collection_tCx73b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "armsleeves-1"
+          }
+        },
+        "featured_collection_AqLW8P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "20-30-mmhg-velcro-wraps"
+          }
+        },
+        "featured_collection_DqAnqM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_wqhd8N",
+        "featured_collection_tCx73b",
+        "featured_collection_AqLW8P",
+        "featured_collection_DqAnqM"
+      ],
+      "settings": {
+        "title": "FREQUENTLY SEARCHED CATEGORIES",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "hero_banner_brJYG9",
+    "best_fit_CktgLR",
+    "your_care_F7Bqhd",
+    "logo_list_kKWrfE",
+    "highlights_banners_WXg7z6",
+    "collection_list_8RBnJr"
+  ]
+}

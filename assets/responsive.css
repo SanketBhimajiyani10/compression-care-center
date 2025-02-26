@@ -1,0 +1,118 @@
+@media (min-width:768px) {
+    .container-fluid {
+        max-width: 720px;
+    }
+
+    .germent-box.fit-common-box .row .col-4 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width:992px) {
+    .container-fluid {
+        max-width: 980px;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .container-fluid {
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .top-banner:after {
+        display: none;
+    }
+
+    .fond-your-best-fit {
+        background-color: #fff;
+        padding: 40px 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .common-contentbox ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1024px) {
+    .top-banner .zigzag-content, .top-banner .zigzag-img {
+        width: 100%;
+      }
+      .top-banner .zigzag-inner {
+        flex-direction: column;
+        gap: 24px;
+      }
+      .top-banner .banner-text {
+        text-align: center;
+      }
+      h1 {
+        font-size: 48px;
+        line-height: 58px;
+      }
+}
+
+@media (max-width:992px) {
+
+    .best-fit-inner .left-content,
+    .best-fit-inner .right-content {
+        width: 100%;
+    }
+
+    .fond-your-best-fit .best-fit-inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:767px) {
+    .best-fit-inner .left-content {
+        flex-wrap: wrap;
+    }
+
+    .gender-box.fit-common-box,
+    .compression-box.fit-common-box {
+        width: 100%;
+    }
+
+    .compression-box.fit-common-box {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .top-banner .container-fluid {
+        background-image: none;
+    }
+
+    .top-banner {
+        background-image: url(https://cdn.shopify.com/s/files/1/3001/3312/files/m-banner-img.jpg?v=1604567430);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .top-banner:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(6 87 103 / 80%);
+        z-index: -2;
+    }
+
+    .top-banner .zigzag-img {
+        display: none;
+    }
+
+    .top-banner .zigzag-content,
+    .top-banner .zigzag-img {
+        width: 100%;
+    }
+}

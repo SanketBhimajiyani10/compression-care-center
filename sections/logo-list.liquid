@@ -1,0 +1,71 @@
+<section class="logo-list featured-brand-sec">
+  <div class="container-fluid">
+    <img class="m-image" src="https://cdn.shopify.com/s/files/1/3001/3312/files/m-collage.png?v=1604567463" alt="img"/>
+    <div class="brandlogo text-center">
+      {% if section.settings.title != blank %}
+        <h2>
+          {{ section.settings.title | escape }}
+        </h2>
+      {% endif %}
+
+      <div class="home-section--content logolist--inner d-flex flex-wrap align-items-center justify-content-center">
+        {% for block in section.blocks %}
+          <div class="logolist--item" {{ block.shopify_attributes }}>
+            {% if block.settings.link != blank %}
+              <a class="logolist--link" href="{{ block.settings.link | escape }}" target="_blank">
+            {% endif %}
+    
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url:'master' }}" class="logolist--image">
+            {% endif %}
+    
+            {% if block.settings.link != blank %}
+              </a>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Logo List",
+    "class": "logolist--section",
+    "max_blocks": 18,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Logo list"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo",
+        "name": "Logo",
+        "settings": [
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image",
+            "info": "320 x 320px .png recommended"
+          },
+          {
+            "type": "text",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+        {
+          "name": "Logo List"
+        }
+    ]
+  }
+{% endschema %}

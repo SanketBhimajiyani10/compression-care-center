@@ -1,0 +1,63 @@
+<div class="top-banner">
+  <div class="container-fluid">
+    <div class="zigzag-inner">
+      <div class="zigzag-content">
+        <div class="banner-text">
+          <h1>{{ section.settings.heading }}</h1>
+          <p>{{ section.settings.subheading }}</p>
+          <a class="common-btn" href="{{ section.settings.buttonlink }}">{{ section.settings.buttontext }}</a>
+        </div>
+      </div>
+      <div class="zigzag-img">
+        {% if section.settings.images != blank %}
+        <div class="banner-img">
+          <img class="img-cover" src="{{ section.settings.images |  image_url: width:568  }}" width="568" height="460" alt="{{ section.settings.images.alt }}">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Hero Banner",
+    "settings": [
+		{
+			"id":"heading",
+			"type":"text",
+			"label":"Heading"
+		},
+		{
+			"id":"subheading",
+			"type":"text",
+			"label":"Sub-Heading"
+		},
+		{
+			"id":"buttontext",
+			"type":"text",
+			"label":"Button Label"
+		},
+		{
+			"id":"buttonlink",
+			"type":"url",
+			"label":"Button URL"
+		},
+		{
+			"id":"images",
+			"type":"image_picker",
+			"label":"Add Image"
+		}
+	],
+    "presets": [
+        {
+          "name": "Hero Banner"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

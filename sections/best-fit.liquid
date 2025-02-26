@@ -1,0 +1,347 @@
+<section class="best-fit" id="best-fit">
+
+  <div class="container-fluid">
+    <div class="fond-your-best-fit">
+      <ul class="bestfit-icons">
+        {% if section.settings.prod-icon1 != blank %}
+          <li>
+            <div class="bestfit-icons-img"><img src="{{ section.settings.prod-icon1 | img_url:"master" }}"></div>
+            <p>{{ section.settings.prod-text1 }}</p>
+          </li>
+        {% endif %}
+        {% if section.settings.prod-icon2 != blank %}
+          <li>
+            <div class="bestfit-icons-img"><img src="{{ section.settings.prod-icon2 | img_url:"master" }}"></div>
+            <p>{{ section.settings.prod-text2 }}</p>
+          </li>
+        {% endif %}
+        {% if section.settings.prod-icon3 != blank %}
+          <li>
+            <div class="bestfit-icons-img"><img src="{{ section.settings.prod-icon3 | img_url:"master" }}"></div>
+            <p>{{ section.settings.prod-text3 }}</p>
+          </li>
+        {% endif %}
+      </ul>
+      <h2>FIND your BEST FIT</h2>
+      <div class="row best-fit-inner">
+        <div class="left-content">
+          <div class="gender-box fit-common-box">
+            <h3 class="fit-black-btn">Gender</h3>
+            <div class="row">
+              <div class="col-6">
+                <div class="m-w-box">
+                  <a
+                    href="javascript:;"
+                    class="gender-link"
+                    data-link="gender_men">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/M-icon.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/1-Men.png?v=1605080188"
+                        alt="icon"></figure>
+                    <h4>Men</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="m-w-box">
+                  <a
+                    href="javascript:;"
+                    class="gender-link"
+                    data-link="gender_women">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/b-W-icon.png?v=1605089014"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/W-icon_baf0c27a-9349-4dc2-97b9-ea0632d7d4e3.png?v=1605088704"
+                        alt="icon"></figure>
+                    <h4>Women</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3 class="fit-black-btn">Style</h3>
+            <ul class="gray-btn-style">
+              <li>
+                <a
+                  href="javascript:;"
+                  class="style-link"
+                  data-link="toe_open-toe">open toe</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:;"
+                  class="style-link"
+                  data-link="toe_closed-toe">closed toe</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:;"
+                  class="style-link"
+                  data-link="style_silicone-band">SILICONE BAND</a>
+              </li>
+            </ul>
+          </div>
+          <div class="compression-box fit-common-box">
+            <h3 class="fit-black-btn">COMPRESSION LEVEL
+              <a href="https://compressioncarecenter.com/pages/compression-level-guide">
+                <img src="https://cdn.shopify.com/s/files/1/3001/3312/files/question.png?v=1607574630"></a>
+            </h3>
+            <ul class="gray-btn-style">
+              <li>
+                <a
+                  href="javascript:;"
+                  class="compression-link"
+                  data-link="compression-level_8-15">MILD
+                  <span>8-15 mmHg</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:;"
+                  class="compression-link"
+                  data-link="compression-level_15-20-mmhg">MODERATE
+                  <span>15-20 mmHg</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:;"
+                  class="compression-link"
+                  data-link="compression-level_20-30-mmhg">FIRM
+                  <span>20-30 mmHg
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:;"
+                  class="compression-link"
+                  data-link="compression-level_30-40-mmhg">X-FIRM
+                  <span>30-40 mmHg</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:;"
+                  class="compression-link"
+                  data-link="compression-level_40-mmhg">SEVERE
+                  <span>40-50 mmHg</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="germent-box fit-common-box">
+            <h3 class="fit-black-btn">GARMENT OPTIONS</h3>
+
+            <div class="row">
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_ankle-high">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/a-img1.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/3-Ankle.png?v=1605081268"
+                        alt="icon"></figure>
+                    <h4>Ankle/Crew</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_knee-high">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/a-img2.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/4-KneeHigh.png?v=1605081269"
+                        alt="icon"></figure>
+                    <h4>Knee-high Socks</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_leggings">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/a-img3.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/10-Leggings.png?v=1605081270"
+                        alt="icon"></figure>
+                    <h4>Leggings</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_thigh-high">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/a-img4.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/6-ThighHighs.png?v=1605081270"
+                        alt="icon"></figure>
+                    <h4>Thigh Highs</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_pantyhose">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/a-img5.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/8-Pantyhose.png?v=1605081270"
+                        alt="icon"></figure>
+                    <h4>Pantyhose</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_maternity">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/a-img6.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/9-Maternity.png?v=1605081270"
+                        alt="icon"></figure>
+                    <h4>Maternity Pantyhose</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_chaps">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/a-img7.png?v=1604494853"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/7-Wraps.png?v=1605081270"
+                        alt="icon"></figure>
+                    <h4>Compression Wraps</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 col-md-3">
+                <div class="gray-btn-style">
+                  <a
+                    href="javascript:;"
+                    class="germent-link"
+                    data-link="product-type_armsleeve">
+                    <figure><img
+                        class="c-first-img"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/c-11-Arm.png?v=1605088925"
+                        alt="icon"></figure>
+                    <figure><img
+                        class="w-hover-image"
+                        src="https://cdn.shopify.com/s/files/1/3001/3312/files/11-Arm.png?v=1605081269"
+                        alt="icon"></figure>
+                    <h4>Armsleeve & Gauntlets</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="apply-btn text-center mt-4 pt-lg-2">
+        <a class="common-btn green-btn homefilter" href="javascript:;">apply filter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Best Fit",
+    "settings": [
+      {
+        "id": "prod-icon1",
+        "type": "image_picker",
+        "label": "Icon1"
+      },
+      {
+        "id": "prod-text1",
+        "type": "text",
+        "label": "Info 1"
+      },
+      {
+        "id": "prod-icon2",
+        "type": "image_picker",
+        "label": "Icon2"
+      },
+      {
+        "id": "prod-text2",
+        "type": "text",
+        "label": "Info 2"
+      }, {
+        "id": "prod-icon3",
+        "type": "image_picker",
+        "label": "Icon3"
+      }, {
+        "id": "prod-text3",
+        "type": "text",
+        "label": "Info 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Best Fit",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}
