@@ -8,7 +8,7 @@
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
-      <li>
+      <li class="{{ link.handle }}">
         {%- if link.links != blank -%}
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
@@ -67,6 +67,15 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+                <div class="megamenu-content">
+                  <div class="mega-menu_img">
+                    <img src="{{ section.settings.mega_menu_image |  image_url: width:200  }}" width="200" height="267" alt="{{ section.settings.mega_menu_image.alt }}" />
+                  </div>
+                  <div class="megamenu-btns">
+                    <a href="{{ section.settings.measure_url }}">{{ section.settings.measure_text }}</a>
+                    <a href="{{ section.settings.compress_url }}">{{ section.settings.compress_text }}</a>
+                  </div>
+                </div>
               </div>
             </details>
           </header-menu>
