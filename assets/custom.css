@@ -1215,3 +1215,22 @@ ul.footer-block__details-content {
     }
 }
 
+@media (min-width: 750px) {
+  .footer-block__details-content {
+    display: block !important;
+  }
+  .footer .footer__blocks-wrapper .footer-block {
+    width: fit-content;
+    max-width: 312px;
+  }
+  .footer-block__details-content {
+    display: block !important;
+  }
+  .footer .footer-upper .footer-logo img {
+    max-width: 379px;
+  }
+  .footer .footer__blocks-wrapper .footer-block .footer-block__heading {
+    background-image: none;
+  }
+}
+
