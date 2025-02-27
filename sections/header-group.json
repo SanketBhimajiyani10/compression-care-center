@@ -52,7 +52,12 @@
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 0,
+        "mega_menu_image": "shopify://shop_images/Sigvaris_832CW_Microfiber_Patterns_Womens_Knee_High_20-30_mmHg_Graphite_Heather_3760f00a-5d62-4f98-bee6-290130c2fdfe.jpg",
+        "measure_text": "",
+        "measure_url": "",
+        "compress_text": "",
+        "compress_url": ""
       }
     }
   },

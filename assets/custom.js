@@ -137,3 +137,27 @@ $('.homefilter').on('click',function(){
       }
           
   })
+
+  function footerDropdown() {
+    if ($(window).width() < 750) {
+      if ($('footer').length) {
+        $('.footer-block__heading').off('click').on('click', function (e) {
+          e.preventDefault();
+          $('.footer-block__heading').not(this).removeClass('active').next('ul.footer-block__details-content').slideUp();
+          $(this).toggleClass('active');
+          $(this).next('ul.footer-block__details-content').slideToggle();
+        });
+      }
+    } else {
+      // Remove click event on larger screens
+      $('.footer-block__heading').off('click');
+      $('.footer-block__details-content').removeAttr('style'); // Reset inline styles
+    }
+  }
+  
+  // Run on page load
+  $(document).ready(footerDropdown);
+  
+  // Run on window resize
+  $(window).resize(footerDropdown);
+  
