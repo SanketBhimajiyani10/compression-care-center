@@ -1021,17 +1021,12 @@ ul.bestfit-icons li:first-child {
   .section-collection-list .title-wrapper-with-link {
     margin-bottom: 30px;
   }
-}
-<<<<<<< HEAD @media screen and (max-width: 454px) and (min-width: 345px) {
   .logo-list.featured-brand-sec
     .home-section--content.logolist--inner
     .logolist--item:nth-child(-n + 3) {
     margin-top: 0;
   }
 }
-=======
-
->>>>>>> 410bf40c671e3468d1e28c0c75cc4ec3ac5b4b89
 
 /* footer css start */
 .footer {
