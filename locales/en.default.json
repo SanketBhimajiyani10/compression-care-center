@@ -113,6 +113,29 @@
     "product_title": "Example product title",
     "collection_title": "Your collection's name"
   },
+  "product_grid": {
+    "filters": {
+      "title_count": {
+        "zero": "Filters",
+        "other": "Filters ({{ count }})"
+      },
+      "remove_filter": "Remove filter",
+      "remove_all": "Remove all filters"
+    },
+    "sort_by": {
+      "title": "Sort by"
+    },
+    "show_per_page": {
+      "title": "Show"
+    },
+    "view_as": {
+      "title": "View as"
+    },
+    "no_results": {
+      "empty": "This collection is empty",
+      "tags_empty": "There are no products matching your search"
+    }
+  },
   "products": {
     "product": {
       "add_to_cart": "Add to cart",

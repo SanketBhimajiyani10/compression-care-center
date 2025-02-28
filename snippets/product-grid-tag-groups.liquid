@@ -1,6 +1,6 @@
-<h2 class="productgrid--sidebar-title">
+<h6 class="productgrid--sidebar-title">
     {{ 'product_grid.filters.title_count' | t: count: 0 }}
-    </h2>
+    </h6>
     
     {% if current_tags.size > 0 %}
       <div class="productgrid--sidebar-item productgrid--sidebar-filters--current">
@@ -103,9 +103,9 @@
           data-filter-group-trigger
           aria-expanded="false"
         >
-          <h3 class="productgrid--sidebar-title--small">
+          <h6 class="productgrid--sidebar-title--small">
             {{ cat_item }}
-          </h3>
+          </h6>
           <div class="productgrid--sidebar-icon-wrapper" tabindex="-1">
             <span class="productgrid--sidebar-icon">
               {% render 'icon-chevron-down-small' %}
