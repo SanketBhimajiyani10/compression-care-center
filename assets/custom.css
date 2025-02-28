@@ -1138,10 +1138,10 @@ ul.footer-block__details-content {
 .header .header__inline-menu ul li[accessories] .mega-menu__list {
   padding: 0;
 }
-.mega-menu__content {
+.header .header__inline-menu ul li[accessories] .mega-menu__content {
   width: 220px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 .header .header__inline-menu ul li[accessories] .mega-menu[open] .mega-menu__content .Mega-menu-wrap {
   margin-bottom: 0;
