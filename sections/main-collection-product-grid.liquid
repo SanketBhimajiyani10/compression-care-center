@@ -107,14 +107,6 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
-          {%
-            include 'product-grid-sidebar',
-            filter_style: section.settings.filter_style,
-            filter_position: section.settings.filter_position,
-            filter_limit: section.settings.filter_limit,
-            menu_depth: section.settings.menu_depth_range,
-            show_prod_count: paginate
-          %}
           {% render 'facets',
             results: collection,
             enable_filtering: section.settings.enable_filtering,
@@ -126,14 +118,22 @@
       {%- endif -%}
 
       <div
-        class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="product-grid-container page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
         {% endif %}
       >
+      {%
+        include 'product-grid-sidebar',
+        filter_style: section.settings.filter_style,
+        filter_position: section.settings.filter_position,
+        filter_limit: section.settings.filter_limit,
+        menu_depth: section.settings.menu_depth_range,
+        show_prod_count: paginate
+      %}
         {%- if collection.products.size == 0 -%}
-          <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+          <div class="collection collection--empty page-widths" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
             <div class="title-wrapper center">
               <h2 class="title title--primary">

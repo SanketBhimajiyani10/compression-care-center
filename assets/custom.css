@@ -1124,6 +1124,11 @@ ul.footer-block__details-content {
   display: none;
 }
 
+/* collection page css start */
+.product-grid-container {
+  display: flex;
+}
+
 @media (min-width: 990px) {
   .header {
     display: flex;
