@@ -30,51 +30,59 @@
                 class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
-                <ul
-                  class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
-                  role="list"
-                >
-                  {%- for childlink in link.links -%}
-                    <li>
-                      <a
-                        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
-                        href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
-                        {% if childlink.current %}
-                          aria-current="page"
-                        {% endif %}
-                      >
-                        {{ childlink.title | escape }}
-                      </a>
-                      {%- if childlink.links != blank -%}
-                        <ul class="list-unstyled" role="list">
-                          {%- for grandchildlink in childlink.links -%}
-                            <li>
-                              <a
-                                id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
-                                href="{{ grandchildlink.url }}"
-                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
-                                {% if grandchildlink.current %}
-                                  aria-current="page"
-                                {% endif %}
-                              >
-                                {{ grandchildlink.title | escape }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      {%- endif -%}
-                    </li>
-                  {%- endfor -%}
-                </ul>
-                <div class="megamenu-content">
-                  <div class="mega-menu_img">
-                    <img src="{{ section.settings.mega_menu_image |  image_url: width:200  }}" width="200" height="267" alt="{{ section.settings.mega_menu_image.alt }}" />
+                <div class="Mega-menu-wrap">
+                  <ul
+                    class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                    role="list"
+                  >
+                    {%- for childlink in link.links -%}
+                      <li>
+                        <a
+                          id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                          href="{{ childlink.url }}"
+                          class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                          {% if childlink.current %}
+                            aria-current="page"
+                          {% endif %}
+                        >
+                          {{ childlink.title | escape }}
+                        </a>
+                        {%- if childlink.links != blank -%}
+                          <ul class="list-unstyled" role="list">
+                            {%- for grandchildlink in childlink.links -%}
+                              <li>
+                                <a
+                                  id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                                  href="{{ grandchildlink.url }}"
+                                  class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                                  {% if grandchildlink.current %}
+                                    aria-current="page"
+                                  {% endif %}
+                                >
+                                  {{ grandchildlink.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                    <div class="navmenu-item-client-review" style="color: #fbfbfb; background: #0076de">
+                      <p>"I purchased these to help with the pain I have in my legs due to Lipedema. These panty hose are especially fine. Great quality, very sheer for support pantyhose. I highly recommend these." Nancy A</p>
+                    </div>
+                  </ul>
+                  <div class="megamenu-content">
+                    <div class="mega-menu_img">
+                      <img src="{{ section.settings.mega_menu_image |  image_url: width:200  }}" width="200" height="267" alt="{{ section.settings.mega_menu_image.alt }}" />
+                    </div>
+                    <div class="megamenu-btns">
+                      <a href="{{ section.settings.measure_url }}">{{ section.settings.measure_text }}</a>
+                      <a href="{{ section.settings.compress_url }}">{{ section.settings.compress_text }}</a>
+                    </div>
                   </div>
-                  <div class="megamenu-btns">
-                    <a href="{{ section.settings.measure_url }}">{{ section.settings.measure_text }}</a>
-                    <a href="{{ section.settings.compress_url }}">{{ section.settings.compress_text }}</a>
-                  </div>
+                </div>
+                <div style="background: #0b61a4" class="navmenu-promo-text">
+                  <p style="color: #ffffff">Thank you for visiting CompressionCareCenter.com!</p>
                 </div>
               </div>
             </details>
