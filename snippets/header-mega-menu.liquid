@@ -67,10 +67,13 @@
                         {%- endif -%}
                       </li>
                     {%- endfor -%}
+                    {% if link.handle != 'women' and link.handle != 'accessories' %}
                     <div class="navmenu-item-client-review" style="color: #fbfbfb; background: #0076de">
                       <p>"I purchased these to help with the pain I have in my legs due to Lipedema. These panty hose are especially fine. Great quality, very sheer for support pantyhose. I highly recommend these." Nancy A</p>
                     </div>
+                    {% endif %}
                   </ul>
+                  {% if link.handle != 'accessories' %}
                   <div class="megamenu-content">
                     <div class="mega-menu_img">
                       <img src="{{ section.settings.mega_menu_image |  image_url: width:200  }}" width="200" height="267" alt="{{ section.settings.mega_menu_image.alt }}" />
@@ -80,10 +83,13 @@
                       <a href="{{ section.settings.compress_url }}">{{ section.settings.compress_text }}</a>
                     </div>
                   </div>
+                  {% endif %}
                 </div>
+                {% if link.handle != 'accessories' %}
                 <div style="background: #0b61a4" class="navmenu-promo-text">
                   <p style="color: #ffffff">Thank you for visiting CompressionCareCenter.com!</p>
                 </div>
+                {% endif %}
               </div>
             </details>
           </header-menu>
