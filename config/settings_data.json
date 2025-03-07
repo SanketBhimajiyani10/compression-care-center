@@ -143,6 +143,32 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "11724500921838622758": {
+        "type": "shopify://apps/frequently-bought/blocks/app-embed-block/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
+        "disabled": false,
+        "settings": {}
+      },
+      "7570552984445421165": {
+        "type": "shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": true,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#000000",
+          "secondary_color": "#FFFFFF",
+          "ternary_color": "#6A6A6A",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": ""
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -196,6 +222,17 @@
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-61a3025c-56f3-4af4-a7af-9d2d191e4247": {
+        "settings": {
+          "background": "#f5f5f7",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }

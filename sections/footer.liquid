@@ -62,7 +62,9 @@
           -%}
           <div class="footer-upper">
             <div class="footer-logo">
-              <img src="{{ section.settings.footer_logo |  image_url: width:379  }}" width="379" height="113" alt="{{ section.settings.footer_logo.alt }}" />
+              <a href="/">
+                <img src="{{ section.settings.footer_logo |  image_url: width:379  }}" width="379" height="113" alt="{{ section.settings.footer_logo.alt }}" />
+              </a>
             </div>
             <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"

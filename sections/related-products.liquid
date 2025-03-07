@@ -22,13 +22,14 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <product-recommendations
-    class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="related-products clr-bg-style section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
     data-product-id="{{ product.id }}"
   >
+  <div class="page-width">
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
+      <h2 class="related-products__heading inline-richtext blue-heading page-width {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
       <ul
@@ -52,6 +53,7 @@
         {% endfor %}
       </ul>
     {% endif %}
+  </div>
   </product-recommendations>
   {% if section.settings.image_shape == 'arch' %}
     {{ 'mask-arch.svg' | inline_asset_content }}
