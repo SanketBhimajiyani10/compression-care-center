@@ -91,7 +91,7 @@ h4 {
   line-height: 40px;
 }
 
-h5 {
+h5,.h5 {
   font-size: 24px;
   line-height: 34px;
 }
@@ -1150,6 +1150,35 @@ ul.footer-block__details-content {
 /* collection page css start */
 .product-grid-container {
   display: flex;
+}
+
+/* mainproduct-description css start */
+.mainproduct-description {
+
+}
+
+.clr-bg-style:after {
+  background-color: #66bcb1a6;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.template-product #MainContent {
+  background-color: #f5f5f7;
+} 
+
+.mainproduct-description .rich-text__wrapper {
+  justify-content: flex-start;
+}
+
+.mainproduct-description .rich-text__blocks {
+  max-width: 100%;
+  text-align: left;
 }
 
 @media (min-width: 990px) {
