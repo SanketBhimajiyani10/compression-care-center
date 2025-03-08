@@ -50,9 +50,13 @@
       .top-banner .banner-text {
         text-align: center;
       }
-      h1 {
+      h1,.h1 {
         font-size: 48px;
         line-height: 58px;
+      }
+      h2,.h2 {
+        font-size: 38px;
+        line-height: 48px;
       }
 }
 

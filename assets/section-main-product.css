@@ -138,6 +138,7 @@ product-info {
   letter-spacing: 0.05rem;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+  color: #008099 !important;
 }
 
 .shopify-payment-button__button + .shopify-payment-button__button--hidden {
@@ -171,10 +172,17 @@ product-info {
 .product-form__input {
   flex: 0 0 100%;
   padding: 0;
-  margin: 0 0 1.2rem 0;
+  padding: 0 0 1.6rem 0;
   max-width: 44rem;
   min-width: fit-content;
   border: none;
+  border-bottom: 1px solid #b1b1b1;
+    margin-bottom: 16px;
+}
+variant-selects {
+  margin: 0 !important;
+  padding: 1.5rem 0;
+  border-top: 1px solid #b1b1b1;
 }
 
 .product-form__input .form__label {
@@ -278,6 +286,8 @@ a.product__text {
 
 .product .price .badge {
   margin-bottom: 0.5rem;
+  background-color: #01819a;
+  border-radius: 0;
 }
 
 .product .price__container {
@@ -326,6 +336,10 @@ a.product__text {
 
 .product__tax {
   margin-top: -1.4rem;
+  display: none;
+}
+.product .installment {
+  display: none;
 }
 
 .product--no-media .share-button {
@@ -1301,6 +1315,7 @@ a.product__text {
   position: relative;
   width: 100%;
   max-width: calc(100% - calc(var(--media-border-width) * 2));
+  background-color: #fff;
 }
 
 .product-media-container.constrain-height {

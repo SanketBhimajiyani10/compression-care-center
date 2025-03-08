@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded", function() {
+  var sizeChartOriginal = document.querySelector('.mainproduct-description a[href*="https://cdn.shopify.com/s/files/"]');
+
+  if (sizeChartOriginal) {
+    // Hide the original size chart link
+    sizeChartOriginal.style.display = "none";
+
+    // Setup for modal
+    var sizeChartContent = document.querySelector('.sizechart--content');
+    if (sizeChartContent) {
+      sizeChartContent.innerHTML = '<img src="' + sizeChartOriginal.href + '" />';
+    }
+
+    // Select the size option legend
+    var sizeOption = document.querySelector('fieldset.product-form__input legend');
+    if (sizeOption && sizeOption.textContent.includes("Size")) {
+      // Create a wrapper div
+      var wrapperDiv = document.createElement("div");
+      wrapperDiv.className = "size-option-wrapper";
+
+      // Move legend inside the wrapper
+      sizeOption.parentNode.insertBefore(wrapperDiv, sizeOption);
+      wrapperDiv.appendChild(sizeOption);
+
+      // Create and append the Size Chart link
+      var link = document.createElement("a");
+      link.href = "#sizechart";
+      link.className = "size-chart-link";
+      link.textContent = "Size Chart";
+      wrapperDiv.appendChild(link);
+    }
+  }
+});

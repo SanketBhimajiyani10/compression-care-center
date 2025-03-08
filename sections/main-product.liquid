@@ -90,15 +90,15 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
-                {%- when 'text' -%}
-                  <div class="product-vendor">
-                    {% unless onboarding %}
-                      {%- capture vendor_link -%}
+              {%- when 'text' -%}
+                <div class="product-vendor">
+                  {% unless onboarding %}
+                    {%- capture vendor_link -%}
                         {{ product.vendor | link_to_vendor }}
                       {%- endcapture -%}
-                      {{ vendor_link }}
-                    {% endunless %}
-                  </div>
+                    {{ vendor_link }}
+                  {% endunless %}
+                </div>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1 class="h5">{{ product.title | escape }}</h1>
@@ -194,12 +194,14 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
-              {% comment %} {%- when 'description' -%}
-                {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
-                  </div>
-                {%- endif -%} {% endcomment %}
+                {% comment %}
+                  {%- when 'description' -%}
+                  {%- if product.description != blank -%}
+                    <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                      {{ product.description }}
+                    </div>
+                  {%- endif -%}
+                {% endcomment %}
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -663,6 +665,25 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+                {% when 'text-with-icon' %}
+                  <div class="product-guranteed">
+                    <div class="container">
+                      <ul>
+                        <li>
+                          <img src="{{ block.settings.prod-icon1 | img_url:"master" }}">
+                          <p>{{ block.settings['prod-text1'] }}</p>
+                        </li>
+                        <li>
+                          <img src="{{ block.settings.prod-icon2 | img_url:"master" }}">
+                          <p>{{ block.settings['prod-text2'] }}</p>
+                        </li>
+                        <li>
+                          <img src="{{ block.settings.prod-icon3 | img_url:"master" }}">
+                          <p>{{ block.settings['prod-text3'] }}</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -941,6 +962,43 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.share.settings.title_info.content"
+        }
+      ]
+    },
+    {
+      "type": "text-with-icon",
+      "name": "Text With Icon",
+      "limit": 1,
+      "settings": [
+        {
+          "id": "prod-icon1",
+          "type": "image_picker",
+          "label": "Icon1"
+        },
+        {
+          "id": "prod-text1",
+          "type": "text",
+          "label": "Info 1"
+        },
+        {
+          "id": "prod-icon2",
+          "type": "image_picker",
+          "label": "Icon2"
+        },
+        {
+          "id": "prod-text2",
+          "type": "text",
+          "label": "Info 2"
+        },
+        {
+          "id": "prod-icon3",
+          "type": "image_picker",
+          "label": "Icon3"
+        },
+        {
+          "id": "prod-text3",
+          "type": "text",
+          "label": "Info 3"
         }
       ]
     },
